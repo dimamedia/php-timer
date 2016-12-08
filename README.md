@@ -38,29 +38,45 @@ Result will be like:
 
 Construct:
 
-```$timer = new timer();```
+```
+$timer = new timer();
+```
 Counter starts here.
 
 Request current moment:
 
-```$value = $timer->now();```
+```
+$value = $timer->now();
+```
 Requested time inseconds returned.
 
-```$value = $timer->now("Phase 1");```
+```
+$value = $timer->now("Phase 1");
+```
 Requested time in seconds returned and saved into array for later use.
 
-```$value = $timer->now("Phase 2", "min");```
+```
+$value = $timer->now("Phase 2", "min");
+```
 Requested time in minutes returned and saved into array for later use.
 
-```$timer->now("Phase 3");```
+```
+$timer->now("Phase 3");
+```
 Requested time saved into array for later use.
 
-```$value = $timer->last();```
+```
+$value = $timer->last();
+```
 Previously requested time in seconds returned.
 
-```$value = $timer->last("min");```
+```
+$value = $timer->last("min");
+```
 Previously requested time in minutes returned.
 
-```$timer->data;```
+```
+$timer->data;
+```
 Array of all titled requested times.
 
